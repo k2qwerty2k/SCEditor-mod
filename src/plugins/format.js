@@ -9,10 +9,10 @@
  *
  * @fileoverview SCEditor Paragraph Formatting Plugin
  * @author Sam Clarke
+ * @mod by Pavel Sochelnikov https://4pda.to/forum/index.php?showuser=1277
  */
-(function (sceditor) {
-	'use strict';
-
+'use strict';
+export default function (sceditor) {
 	sceditor.plugins.format = function () {
 		var base = this;
 
@@ -124,4 +124,4 @@
 			editor.createDropDown(caller, 'format', content);
 		};
 	};
-})(sceditor);
+};

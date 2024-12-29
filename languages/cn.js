@@ -1,10 +1,10 @@
 /**
  * @author <Your Name> <Your e-mail/Website if you would like>
  * @license [MIT](http://www.opensource.org/licenses/mit-license.php)
+ * @mod by Pavel Sochelnikov https://4pda.to/forum/index.php?showuser=1277
  */
-(function () {
-	'use strict';
-
+'use strict';
+export default function(sceditor) {
 	sceditor.locale['cn'] = {
 		'Bold': '粗体',
 		'Italic': '斜体',
@@ -65,4 +65,4 @@
 
 		dateFormat: 'year-month-day'
 	};
-})();
+};

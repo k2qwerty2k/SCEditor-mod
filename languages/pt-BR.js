@@ -1,10 +1,10 @@
 /**
 * @author martec
 * @license [MIT](http://www.opensource.org/licenses/mit-license.php)
-*/
-(function () {
-	'use strict';
-
+ * @mod by Pavel Sochelnikov https://4pda.to/forum/index.php?showuser=1277
+ */
+'use strict';
+export default function(sceditor) {
 	sceditor.locale['pt-BR'] = {
 		'Bold': 'Negrito',
 		'Italic': 'Itálico',
@@ -64,4 +64,4 @@
 		'Invalid YouTube video': 'Vídeo do YouTube inválido',
 		dateFormat: 'day-month-year'
 	};
-})();
+};

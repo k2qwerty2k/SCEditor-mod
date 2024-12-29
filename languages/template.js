@@ -2,8 +2,8 @@
  * @author <Your Name> <Your e-mail/Website if you would like>
  * @license [MIT](http://www.opensource.org/licenses/mit-license.php)
  */
-(function () {
-	'use strict';
+'use strict';
+export default function(sceditor) {
 
 	// Replace <code> with the language code, e.g. no, fr, en, ect.
 	sceditor.locale['<code>'] = {
@@ -77,4 +77,4 @@
 		// order used
 		dateFormat: 'day-month-year'
 	};
-})();
+};

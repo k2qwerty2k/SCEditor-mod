@@ -1,10 +1,10 @@
 /**
  * @author <Mirosław Dróżdż> <miroslaw.drozdz@vert.pl/www.vert.info.pl>
  * @license [MIT](http://www.opensource.org/licenses/mit-license.php)
+ * @mod by Pavel Sochelnikov https://4pda.to/forum/index.php?showuser=1277
  */
-(function () {
-	'use strict';
-
+'use strict';
+export default function(sceditor) {
 	sceditor.locale['pl'] = {
 		'Bold': 'Pogrubienie',
 		'Italic': 'Kursywa',
@@ -65,4 +65,4 @@
 
 		dateFormat: 'day-month-year'
 	};
-})();
+};

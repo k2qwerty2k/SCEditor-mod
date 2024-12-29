@@ -1,9 +1,10 @@
 ﻿/**
  * @author Mahmut Yaman - iletisim@/m-yaman.com
  * @license [MIT](http://www.opensource.org/licenses/mit-license.php)
+ * @mod by Pavel Sochelnikov https://4pda.to/forum/index.php?showuser=1277
  */
-(function () {
-	'use strict';
+'use strict';
+export default function(sceditor) {
 	sceditor.locale['tr'] = {
 		'Bold': 'Kalın',
 		'Italic': 'İtalik',
@@ -63,4 +64,4 @@
 		'Invalid YouTube video': 'Geçersiz YouTube videosu',
 		dateFormat: 'day-month-year'
 	};
-})();
+};

@@ -1,10 +1,10 @@
 /**
  * @author Katrine
  * @license [MIT](http://www.opensource.org/licenses/mit-license.php)
+ * @mod by Pavel Sochelnikov https://4pda.to/forum/index.php?showuser=1277
  */
-(function () {
-	'use strict';
-
+'use strict';
+export default function(sceditor) {
 	sceditor.locale['nb-NO'] = {
 		'Bold': 'Fet',
 		'Italic': 'Kursiv',
@@ -67,4 +67,4 @@
 	};
 
 	sceditor.locale['nb'] = sceditor.locale['nb-NO'];
-})();
+});

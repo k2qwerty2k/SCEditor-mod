@@ -2,10 +2,10 @@
  * @author Ángyán László <lacavale55@gmail.com>
  * @license [MIT](http://www.opensource.org/licenses/mit-license.php)
  * @date 2013-08-11
+ * @mod by Pavel Sochelnikov https://4pda.to/forum/index.php?showuser=1277
  */
-(function () {
-	'use strict';
-
+'use strict';
+export default function(sceditor) {
 	sceditor.locale['hu'] = {
 		'Bold': 'Félkövér',
 		'Italic': 'Dőlt',
@@ -66,4 +66,4 @@
 
 		dateFormat: 'year.month.day.'
 	};
-})();
+};

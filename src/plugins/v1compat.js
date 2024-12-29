@@ -6,10 +6,10 @@
  * node arguments in jQuery objects.
  *
  * Should only be used to ease migrating.
+ * @mod by Pavel Sochelnikov https://4pda.to/forum/index.php?showuser=1277
  */
-(function (sceditor, $) {
-	'use strict';
-
+'use strict';
+export default function (sceditor, $) {
 	var plugins = sceditor.plugins;
 
 	/**
@@ -94,4 +94,4 @@
 				patchMethodReturn(editor.getContentAreaContainer);
 		}
 	};
-}(sceditor, jQuery));
+};

@@ -1,6 +1,8 @@
-(function (sceditor) {
-	'use strict';
-
+/**
+ * @mod by Pavel Sochelnikov https://4pda.to/forum/index.php?showuser=1277
+ */
+'use strict';
+export default function (sceditor) {
 	sceditor.plugins.undo = function () {
 		var base = this;
 		var sourceEditor;
@@ -369,4 +371,4 @@
 			return node;
 		}
 	};
-}(sceditor));
+};

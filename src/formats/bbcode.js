@@ -9,10 +9,11 @@
  *
  * @fileoverview SCEditor BBCode Format
  * @author Sam Clarke
+ * @mod by Pavel Sochelnikov https://4pda.to/forum/index.php?showuser=1277
  */
-(function (sceditor) {
+'use strict';
+export default function (sceditor) {
 	/*eslint max-depth: off*/
-	'use strict';
 
 	var escapeEntities  = sceditor.escapeEntities;
 	var escapeUriScheme = sceditor.escapeUriScheme;
@@ -2643,4 +2644,4 @@
 
 	sceditor.formats.bbcode = bbcodeFormat;
 	sceditor.BBCodeParser = BBCodeParser;
-}(sceditor));
+};

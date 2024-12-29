@@ -1,9 +1,9 @@
 /**
  * @author Nikos Aggelis nikosaggelis@hotmail.gr
+ * @mod by Pavel Sochelnikov https://4pda.to/forum/index.php?showuser=1277
  */
-(function () {
-	'use strict';
-
+'use strict';
+export default function(sceditor) {
 	sceditor.locale['el'] = {
 		'Bold': 'Έντονα',
 		'Italic': 'Πλάγια',
@@ -65,4 +65,4 @@
 
 		dateFormat: 'day-month-year'
 	};
-})();
+};

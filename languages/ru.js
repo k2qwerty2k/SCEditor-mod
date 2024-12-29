@@ -1,6 +1,9 @@
-(function () {
-	'use strict';
-
+/**
+ * Author: unknown
+ * @mod by Pavel Sochelnikov https://4pda.to/forum/index.php?showuser=1277
+ */
+'use strict';
+export default function(sceditor) {
 	sceditor.locale['ru'] = {
 		'Bold': 'Жирный',
 		'Italic': 'Курсив',
@@ -57,4 +60,4 @@
 		'Description (optional):': 'Описание (необязательно):',
 		dateFormat: 'day.month.year'
 	};
-})();
+};

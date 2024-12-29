@@ -7,8 +7,9 @@ import * as escape from './escape.js';
  * @type {Object}
  * @private
  */
-var _templates = {
-	html:
+const TEMPLATES_KEY = "templates";
+const _templates = {
+	"html":
 		'<!DOCTYPE html>' +
 		'<html{attrs}>' +
 			'<head>' +
@@ -19,26 +20,26 @@ var _templates = {
 			'<body contenteditable="true" {spellcheck}><p></p></body>' +
 		'</html>',
 
-	toolbarButton: '<a class="sceditor-button sceditor-button-{name}" ' +
+	"toolbarButton": '<a class="sceditor-button sceditor-button-{name}" ' +
 		'data-sceditor-command="{name}" unselectable="on">' +
 		'<div unselectable="on">{dispName}</div></a>',
 
-	emoticon: '<img src="{url}" data-sceditor-emoticon="{key}" ' +
+	"emoticon": '<img src="{url}" data-sceditor-emoticon="{key}" ' +
 		'alt="{key}" title="{tooltip}" />',
 
-	fontOpt: '<a class="sceditor-font-option" href="#" ' +
+	"fontOpt": '<a class="sceditor-font-option" href="#" ' +
 		'data-font="{font}"><font face="{font}">{font}</font></a>',
 
-	sizeOpt: '<a class="sceditor-fontsize-option" data-size="{size}" ' +
+	"sizeOpt": '<a class="sceditor-fontsize-option" data-size="{size}" ' +
 		'href="#"><font size="{size}">{size}</font></a>',
 
-	pastetext:
+	"pastetext":
 		'<div><label for="txt">{label}</label> ' +
 			'<textarea cols="20" rows="7" id="txt"></textarea></div>' +
 			'<div><input type="button" class="button" value="{insert}" />' +
 		'</div>',
 
-	table:
+	"table":
 		'<div><label for="rows">{rows}</label><input type="text" ' +
 			'id="rows" value="2" /></div>' +
 		'<div><label for="cols">{cols}</label><input type="text" ' +
@@ -46,7 +47,7 @@ var _templates = {
 		'<div><input type="button" class="button" value="{insert}"' +
 			' /></div>',
 
-	image:
+	"image":
 		'<div><label for="image">{url}</label> ' +
 			'<input type="text" id="image" dir="ltr" placeholder="https://" /></div>' +
 		'<div><label for="width">{width}</label> ' +
@@ -56,7 +57,7 @@ var _templates = {
 		'<div><input type="button" class="button" value="{insert}" />' +
 			'</div>',
 
-	email:
+	"email":
 		'<div><label for="email">{label}</label> ' +
 			'<input type="text" id="email" dir="ltr" /></div>' +
 		'<div><label for="des">{desc}</label> ' +
@@ -64,24 +65,47 @@ var _templates = {
 		'<div><input type="button" class="button" value="{insert}" />' +
 			'</div>',
 
-	link:
+	"link":
 		'<div><label for="link">{url}</label> ' +
 			'<input type="text" id="link" dir="ltr" placeholder="https://" /></div>' +
 		'<div><label for="des">{desc}</label> ' +
 			'<input type="text" id="des" /></div>' +
 		'<div><input type="button" class="button" value="{ins}" /></div>',
 
-	youtubeMenu:
+	"youtubeMenu":
 		'<div><label for="link">{label}</label> ' +
 			'<input type="text" id="link" dir="ltr" placeholder="https://" /></div>' +
 		'<div><input type="button" class="button" value="{insert}" />' +
 			'</div>',
 
-	youtube:
+	"youtube":
 		'<iframe width="560" height="315" frameborder="0" allowfullscreen ' +
 		'src="https://www.youtube-nocookie.com/embed/{id}?wmode=opaque&start={time}" ' +
 		'data-youtube-id="{id}"></iframe>'
 };
+
+function tmpl(name, params, createHtml) {
+	if(!(TEMPLATES_KEY in this) || !this[TEMPLATES_KEY] || !(name in this[TEMPLATES_KEY])) {
+		return "";
+	}
+	var template = this.templates[name];
+
+	Object.keys(params).forEach(function (name) {
+		template = template.replace(
+			new RegExp(escape.regex('{' + name + '}'), 'g'), params[name]
+		);
+	});
+
+	if (createHtml) {
+		template = dom.parseHTML(template);
+	}
+
+	return template;
+}
+
+tmpl[TEMPLATES_KEY] = _templates;
+
+export default tmpl;
 
 /**
  * Replaces any params in a template with the passed params.
@@ -95,18 +119,19 @@ var _templates = {
  * @returns {string|DocumentFragment}
  * @private
  */
-export default function (name, params, createHtml) {
-	var template = _templates[name];
 
-	Object.keys(params).forEach(function (name) {
-		template = template.replace(
-			new RegExp(escape.regex('{' + name + '}'), 'g'), params[name]
-		);
-	});
+// export default function (name, params, createHtml) {
+// 	var template = _templates[name];
 
-	if (createHtml) {
-		template = dom.parseHTML(template);
-	}
+// 	Object.keys(params).forEach(function (name) {
+// 		template = template.replace(
+// 			new RegExp(escape.regex('{' + name + '}'), 'g'), params[name]
+// 		);
+// 	});
 
-	return template;
-};
+// 	if (createHtml) {
+// 		template = dom.parseHTML(template);
+// 	}
+
+// 	return template;
+// };

@@ -1,10 +1,10 @@
 /**
  * @author <Yoshihiro Misawa> <myoshi321go@gmail.com>
  * @license [MIT](http://www.opensource.org/licenses/mit-license.php)
+ * @mod by Pavel Sochelnikov https://4pda.to/forum/index.php?showuser=1277
  */
-(function () {
-	'use strict';
-
+'use strict';
+export default function(sceditor) {
 	sceditor.locale['ja'] = {
 		'Bold': '太字',
 		'Italic': '斜字',
@@ -68,4 +68,4 @@
 
 		dateFormat: 'year-month-day'
 	};
-})();
+};

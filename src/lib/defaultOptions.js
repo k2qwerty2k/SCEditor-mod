@@ -12,7 +12,7 @@ export default {
 	 *
 	 * @type {string}
 	 */
-	toolbar: 'bold,italic,underline,strike,subscript,superscript|' +
+	"toolbar": 'bold,italic,underline,strike,subscript,superscript|' +
 		'left,center,right,justify|font,size,color,removeformat|' +
 		'cut,copy,pastetext|bulletlist,orderedlist,indent,outdent|' +
 		'table|code,quote|horizontalrule,image,email,link,unlink|' +
@@ -23,7 +23,7 @@ export default {
 	 *
 	 * @type {string}
 	 */
-	toolbarExclude: null,
+	"toolbarExclude": null,
 
 	/**
 	 * Stylesheet to include in the WYSIWYG editor. This is what will style
@@ -31,14 +31,14 @@ export default {
 	 *
 	 * @type {string}
 	 */
-	style: 'jquery.sceditor.default.css',
+	"style": 'jquery.sceditor.default.css',
 
 	/**
 	 * Comma separated list of fonts for the font selector
 	 *
 	 * @type {string}
 	 */
-	fonts: 'Arial,Arial Black,Comic Sans MS,Courier New,Georgia,Impact,' +
+	"fonts": 'Arial,Arial Black,Comic Sans MS,Courier New,Georgia,Impact,' +
 		'Sans-serif,Serif,Times New Roman,Trebuchet MS,Verdana',
 
 	/**
@@ -49,7 +49,7 @@ export default {
 	 *
 	 * @type {string}
 	 */
-	colors: '#000000,#44B8FF,#1E92F7,#0074D9,#005DC2,#00369B,#b3d5f4|' +
+	"colors": '#000000,#44B8FF,#1E92F7,#0074D9,#005DC2,#00369B,#b3d5f4|' +
 			'#444444,#C3FFFF,#9DF9FF,#7FDBFF,#68C4E8,#419DC1,#d9f4ff|' +
 			'#666666,#72FF84,#4CEA5E,#2ECC40,#17B529,#008E02,#c0f0c6|' +
 			'#888888,#FFFF44,#FFFA1E,#FFDC00,#E8C500,#C19E00,#fff5b3|' +
@@ -62,13 +62,13 @@ export default {
 	 * The locale to use.
 	 * @type {string}
 	 */
-	locale: attr(document.documentElement, 'lang') || 'en',
+	"locale": attr(document.documentElement, 'lang') || 'en',
 
 	/**
 	 * The Charset to use
 	 * @type {string}
 	 */
-	charset: 'utf-8',
+	"charset": 'utf-8',
 
 	/**
 	 * Compatibility mode for emoticons.
@@ -84,7 +84,7 @@ export default {
 	 *
 	 * @type {boolean}
 	 */
-	emoticonsCompat: false,
+	"emoticonsCompat": false,
 
 	/**
 	 * If to enable emoticons. Can be changes at runtime using the
@@ -93,16 +93,16 @@ export default {
 	 * @type {boolean}
 	 * @since 1.4.2
 	 */
-	emoticonsEnabled: true,
+	"emoticonsEnabled": true,
 
 	/**
 	 * Emoticon root URL
 	 *
 	 * @type {string}
 	 */
-	emoticonsRoot: '',
-	emoticons: {
-		dropdown: {
+	"emoticonsRoot": '',
+	"emoticons": {
+		"dropdown": {
 			':)': 'emoticons/smile.png',
 			':angel:': 'emoticons/angel.png',
 			':angry:': 'emoticons/angry.png',
@@ -116,7 +116,7 @@ export default {
 			':P': 'emoticons/tongue.png',
 			';)': 'emoticons/wink.png'
 		},
-		more: {
+		"more": {
 			':alien:': 'emoticons/alien.png',
 			':blink:': 'emoticons/blink.png',
 			':blush:': 'emoticons/blush.png',
@@ -137,7 +137,7 @@ export default {
 			':woot:': 'emoticons/w00t.png',
 			':wassat:': 'emoticons/wassat.png'
 		},
-		hidden: {
+		"hidden": {
 			':whistling:': 'emoticons/whistling.png',
 			':love:': 'emoticons/wub.png'
 		}
@@ -148,7 +148,7 @@ export default {
 	 *
 	 * @type {?number}
 	 */
-	width: null,
+	"width": null,
 
 	/**
 	 * Height of the editor including toolbar. Set to null for automatic
@@ -156,14 +156,14 @@ export default {
 	 *
 	 * @type {?number}
 	 */
-	height: null,
+	"height": null,
 
 	/**
 	 * If to allow the editor to be resized
 	 *
 	 * @type {boolean}
 	 */
-	resizeEnabled: true,
+	"resizeEnabled": true,
 
 	/**
 	 * Min resize to width, set to null for half textarea width or -1 for
@@ -171,40 +171,40 @@ export default {
 	 *
 	 * @type {?number}
 	 */
-	resizeMinWidth: null,
+	"resizeMinWidth": null,
 	/**
 	 * Min resize to height, set to null for half textarea height or -1 for
 	 * unlimited
 	 *
 	 * @type {?number}
 	 */
-	resizeMinHeight: null,
+	"resizeMinHeight": null,
 	/**
 	 * Max resize to height, set to null for double textarea height or -1
 	 * for unlimited
 	 *
 	 * @type {?number}
 	 */
-	resizeMaxHeight: null,
+	"resizeMaxHeight": null,
 	/**
 	 * Max resize to width, set to null for double textarea width or -1 for
 	 * unlimited
 	 *
 	 * @type {?number}
 	 */
-	resizeMaxWidth: null,
+	"resizeMaxWidth": null,
 	/**
 	 * If resizing by height is enabled
 	 *
 	 * @type {boolean}
 	 */
-	resizeHeight: true,
+	"resizeHeight": true,
 	/**
 	 * If resizing by width is enabled
 	 *
 	 * @type {boolean}
 	 */
-	resizeWidth: true,
+	"resizeWidth": true,
 
 	/**
 	 * Date format, will be overridden if locale specifies one.
@@ -214,14 +214,14 @@ export default {
 	 *
 	 * @type {string}
 	 */
-	dateFormat: 'year-month-day',
+	"dateFormat": 'year-month-day',
 
 	/**
 	 * Element to inset the toolbar into.
 	 *
 	 * @type {HTMLElement}
 	 */
-	toolbarContainer: null,
+	"toolbarContainer": null,
 
 	/**
 	 * If to enable paste filtering. This is currently experimental, please
@@ -229,21 +229,21 @@ export default {
 	 *
 	 * @type {boolean}
 	 */
-	enablePasteFiltering: false,
+	"enablePasteFiltering": false,
 
 	/**
 	 * If to completely disable pasting into the editor
 	 *
 	 * @type {boolean}
 	 */
-	disablePasting: false,
+	"disablePasting": false,
 
 	/**
 	 * If the editor is read only.
 	 *
 	 * @type {boolean}
 	 */
-	readOnly: false,
+	"readOnly": false,
 
 	/**
 	 * If to set the editor to right-to-left mode.
@@ -252,42 +252,42 @@ export default {
 	 *
 	 * @type {boolean}
 	 */
-	rtl: false,
+	"rtl": false,
 
 	/**
 	 * If to auto focus the editor on page load
 	 *
 	 * @type {boolean}
 	 */
-	autofocus: false,
+	"autofocus": false,
 
 	/**
 	 * If to auto focus the editor to the end of the content
 	 *
 	 * @type {boolean}
 	 */
-	autofocusEnd: true,
+	"autofocusEnd": true,
 
 	/**
 	 * If to auto expand the editor to fix the content
 	 *
 	 * @type {boolean}
 	 */
-	autoExpand: false,
+	"autoExpand": false,
 
 	/**
 	 * If to auto update original textbox on blur
 	 *
 	 * @type {boolean}
 	 */
-	autoUpdate: false,
+	"autoUpdate": false,
 
 	/**
 	 * If to enable the browsers built in spell checker
 	 *
 	 * @type {boolean}
 	 */
-	spellcheck: true,
+	"spellcheck": true,
 
 	/**
 	 * If to run the source editor when there is no WYSIWYG support. Only
@@ -295,7 +295,7 @@ export default {
 	 *
 	 * @type {boolean}
 	 */
-	runWithoutWysiwygSupport: false,
+	"runWithoutWysiwygSupport": false,
 
 	/**
 	 * If to load the editor in source mode and still allow switching
@@ -303,28 +303,28 @@ export default {
 	 *
 	 * @type {boolean}
 	 */
-	startInSourceMode: false,
+	"startInSourceMode": false,
 
 	/**
 	 * Optional ID to give the editor.
 	 *
 	 * @type {string}
 	 */
-	id: null,
+	"id": null,
 
 	/**
 	 * Comma separated list of plugins
 	 *
 	 * @type {string}
 	 */
-	plugins: '',
+	"plugins": '',
 
 	/**
 	 * z-index to set the editor container to. Needed for jQuery UI dialog.
 	 *
 	 * @type {?number}
 	 */
-	zIndex: null,
+	"zIndex": null,
 
 	/**
 	 * If to trim the BBCode. Removes any spaces at the start and end of the
@@ -332,7 +332,7 @@ export default {
 	 *
 	 * @type {boolean}
 	 */
-	bbcodeTrim: false,
+	"bbcodeTrim": false,
 
 	/**
 	 * If to disable removing block level elements by pressing backspace at
@@ -340,7 +340,7 @@ export default {
 	 *
 	 * @type {boolean}
 	 */
-	disableBlockRemove: false,
+	"disableBlockRemove": false,
 
 	/**
 	 * Array of allowed URL (should be either strings or regex) for iframes.
@@ -353,7 +353,7 @@ export default {
 	 *
 	 * @type {Array}
 	 */
-	allowedIframeUrls: [],
+	"allowedIframeUrls": [],
 
 	/**
 	 * BBCode parser options, only applies if using the editor in BBCode
@@ -363,14 +363,14 @@ export default {
 	 *
 	 * @type {Object}
 	 */
-	parserOptions: { },
+	"parserOptions": { },
 
 	/**
 	 * CSS that will be added to the to dropdown menu (eg. z-index)
 	 *
 	 * @type {Object}
 	 */
-	dropDownCss: { },
+	"dropDownCss": { },
 
 	/**
 	 * An array of tags that are allowed in the editor content.
@@ -382,7 +382,7 @@ export default {
 	 *
 	 * @type {Array}
 	 */
-	allowedTags: [],
+	"allowedTags": [],
 
 	/**
 	 * An array of attributes that are allowed on tags in the editor content.
@@ -395,5 +395,5 @@ export default {
 	 *
 	 * @type {Array}
 	 */
-	allowedAttributes: []
+	"allowedAttributes": []
 };

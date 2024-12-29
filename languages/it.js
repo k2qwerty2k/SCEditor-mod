@@ -2,10 +2,10 @@
  * @author <Tropico> <www.mangiaconsapevole.com>
  * @author Gianluca Guazzo
  * @license [MIT](http://www.opensource.org/licenses/mit-license.php)
+ * @mod by Pavel Sochelnikov https://4pda.to/forum/index.php?showuser=1277
  */
-(function () {
-	'use strict';
-
+'use strict';
+export default function(sceditor) {
 	sceditor.locale['it-IT'] = {
 		'Bold': 'Grassetto',
 		'Italic': 'Corsivo',
@@ -69,4 +69,4 @@
 
 	// Set as the default Italian locale
 	sceditor.locale['it'] = sceditor.locale['it-IT'];
-})();
+};

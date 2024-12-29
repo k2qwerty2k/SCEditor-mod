@@ -8,8 +8,10 @@
  *	http://www.opensource.org/licenses/mit-license.php
  *
  * @author Sam Clarke
+ *
+ * @mod by Pavel Sochelnikov https://4pda.to/forum/index.php?showuser=1277
  */
-(function (document, sceditor) {
+export default function (sceditor) {
 	'use strict';
 
 	var dom = sceditor.dom;
@@ -109,4 +111,4 @@
 	};
 
 	sceditor.icons.monocons.icons = icons;
-})(document, sceditor);
+};

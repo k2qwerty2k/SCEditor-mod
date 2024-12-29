@@ -1,6 +1,8 @@
-(function () {
-	'use strict';
-
+/**
+ * @mod by Pavel Sochelnikov https://4pda.to/forum/index.php?showuser=1277
+ */
+'use strict';
+export default function(sceditor) {
 	sceditor.locale['de'] = {
 		'Bold': 'Fett',
 		'Italic': 'Kursiv',
@@ -58,4 +60,4 @@
 		'View source': 'Quelltext ansehen',
 		dateFormat: 'day.month.year'
 	};
-})();
+};

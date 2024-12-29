@@ -1,9 +1,9 @@
-
-// add locale:'fr', to your config options.
-
-(function () {
-	'use strict';
-
+/**
+ * add locale:'fr', to your config options.
+ * @mod by Pavel Sochelnikov https://4pda.to/forum/index.php?showuser=1277
+ */
+'use strict';
+export default function(sceditor) {
 	sceditor.locale['fr-FR'] = {
 		'Bold': 'Gras',
 		'Italic': 'Italique',
@@ -67,4 +67,4 @@
 		dateFormat: 'day/month/year'
 	};
 	sceditor.locale['fr'] = sceditor.locale['fr-FR'];
-})();
+};

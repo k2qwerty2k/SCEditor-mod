@@ -1,11 +1,10 @@
 /**
  * @author Pieterjan Deneys (NekoJonez) - https://arpegi.wordpress.com
  * @license [MIT](http://www.opensource.org/licenses/mit-license.php)
+ * @mod by Pavel Sochelnikov https://4pda.to/forum/index.php?showuser=1277
  */
-
-(function () {
-	'use strict';
-
+'use strict';
+export default function(sceditor) {
 	sceditor.locale['nl'] = {
 		'Bold': 'Vet',
 		'Italic': 'Cursief',
@@ -69,4 +68,4 @@
 		// order used
 		dateFormat: 'day-month-year'
 	};
-})();
+};

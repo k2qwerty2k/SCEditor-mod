@@ -1,6 +1,8 @@
-(function () {
-	'use strict';
-
+/**
+ * @mod by Pavel Sochelnikov https://4pda.to/forum/index.php?showuser=1277
+ */
+'use strict';
+export default function(sceditor) {
 	sceditor.locale['sv-SE'] = {
 		'Bold': 'Fet',
 		'Italic': 'Kursiv',
@@ -55,4 +57,4 @@
 	};
 
 	sceditor.locale['sv'] = sceditor.locale['sv-SE'];
-})();
+};

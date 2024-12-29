@@ -9,11 +9,11 @@
  *
  * @fileoverview SCEditor Paragraph Formatting Plugin
  * @author Sam Clarke
+ * @mod by Pavel Sochelnikov https://4pda.to/forum/index.php?showuser=1277
  */
 /*global EmojiMart*/
-(function (sceditor) {
-	'use strict';
-
+'use strict';
+export default function (sceditor) {
 	sceditor.plugins.emojis = function () {
 		const base = this;
 
@@ -83,4 +83,4 @@
 			};
 		};
 	};
-})(sceditor);
+};
