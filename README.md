@@ -1,4 +1,4 @@
-# [SCEditor](http://www.sceditor.com/)
+# FORK [SCEditor](http://www.sceditor.com/)
 
 [![Build Status](https://github.com/samclarke/SCEditor/workflows/Node.js%20CI/badge.svg)](https://travis-ci.org/samclarke/SCEditor)
 [![SemVer](http://img.shields.io/:semver-✓-brightgreen.svg)](http://semver.org)
